@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" href="../src/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="./js/script.js"></script> <!--"defer" para esperar a pagina html caregar antes do script-->
+</head>
+<body>      
+    <main>
+        <img src="./imagem/pokedéx.png" alt="pokedex" class="pokedex">
+        <section class="insidePokedex">
+            <section class="container container_1">
+                <img src="" alt="pokémon" class="pokemon_image">
+            </section>            
+            <section class="container container_2">
+                <div class="pokemon_data">pokémon: <br>
+                    <span class="pokemon_number"></span>
+                    <span class="pokemon_name"></span>
+                </div>
+                <form class="form" id="form">
+                    <input type="search"
+                    class="input_search"
+                    placeholder="name or number"
+                    required
+                    />
+                    
+                </form>
+                <nav class="buttons">
+                    <button class="button btn-prev" >&lt; prev </button>
+                    <button class="button btn-next" >next &gt;</button>
+                </nav>
+            </section>
+        </section>
+        
+        
+    </main>    
+</body>
+<!-- <script  src="./script.js"></script> usei o script no head --> 
+</html>
