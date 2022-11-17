@@ -60,7 +60,7 @@ main{
 }
 
 .pokemon_data {
-  /* position: absolute; */
+  
   font-weight: 600;
   text-transform: capitalize;
   color: rgb(18, 18, 18);
@@ -79,10 +79,9 @@ main{
 }
 
 .form {
-  /* position: absolute; */
-  width: 100%;
   
-  /* background-color: red; */
+  width: 100%;
+
 }
 
 .input_search {

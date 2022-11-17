@@ -45,22 +45,25 @@ const renderPokemon = async (pokemon) =>{
  })
 
  buttonPrev.addEventListener('click', ()=>{
-  if (searchPokemon>1){
   searchPokemon -=1
-  renderPokemon(searchPokemon)
+  if (searchPokemon>=1){
+    renderPokemon(searchPokemon)
   } 
-  // else{
-  //    searchPokemon = 649
-  // }
+  else{
+     searchPokemon = 649
+    renderPokemon(searchPokemon)
+  }
 });
  buttonNext.addEventListener('click', ()=>{
-  if (searchPokemon <649){
   searchPokemon +=1
-  renderPokemon(searchPokemon)
+  if (searchPokemon <=649){
+  
+    renderPokemon(searchPokemon)
  } 
-//  else {
-//    searchPokemon =1
-//  }
+ else {
+   searchPokemon =1
+    renderPokemon(searchPokemon)
+ }
 });
 
 renderPokemon(searchPokemon)
